@@ -27,7 +27,7 @@ string cypherCaesar(int count_chars, char *alphabet, string message, int k)
 
 int main()
 {
-	setlocale(LC_ALL, "Russian");
+	//setlocale(LC_ALL, "Russian");
 
 	int count_chars;
 	cout << "Enter the count of chars in alphabet: ";
