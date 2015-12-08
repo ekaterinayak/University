@@ -30,33 +30,33 @@ int main()
 	setlocale(LC_ALL, "Russian");
 
 	int count_chars;
-	cout << "Введите количество букв в алфавите: ";
+	cout << "Enter the count of chars in alphabet: ";
 	cin >> count_chars;
 	cin.get();
 	if ( count_chars )
 	{
 		char *alphabet = new char[count_chars];
 
-		cout << endl << "Введите алфавит:" << endl;
+		cout << endl << "Enter alphabet" << endl;
 		for (int i = 0; i < count_chars; i++)
 			cin >> alphabet[i];
 
 		cin.get();
 		string message;
-		cout << endl << "Введите сообщение:" << endl;
+		cout << endl << "Enter message:" << endl;
 		getline(cin, message);
 
 		int k;
-		cout << endl << "Введите сдвиг: ";
+		cout << endl << "Enter shift: ";
 		cin >> k;
 
 		message = cypherCaesar(count_chars, alphabet, message, k);
 
-		cout << endl << "Зашифрованное сообщение:" << endl << message << endl;
+		cout << endl << "Encrypted message:" << endl << message << endl;
 	}
 	else
 	{
-		cout << endl << "Задача нерешаема..." << endl;
+		cout << endl << "Error..." << endl;
 	}
 
 	cout << endl;
