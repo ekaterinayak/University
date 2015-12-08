@@ -37,7 +37,7 @@ int main()
 	{
 		char *alphabet = new char[count_chars];
 
-		cout << endl << "Enter alphabet" << endl;
+		cout << endl << "Enter alphabet:" << endl;
 		for (int i = 0; i < count_chars; i++)
 			cin >> alphabet[i];
 
